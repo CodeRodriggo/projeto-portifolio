@@ -177,6 +177,36 @@ article h2{
   border-radius: 4px;
 }
 
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .faculdade{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: solid 5px var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .faculdade:hover{
+  border-left-width:15px ;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
 
 @media screen and (min-width: 768px) {
   #skill-container{
